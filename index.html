@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     </head>
   <body> <svg xmlns=" " style="display: none;">
   <symbol id="arrow-right" viewBox="0 0 24 24">
@@ -363,7 +364,7 @@
 
     </header>
 
-    <section id="billboard" class="position-relative d-flex align-items-center py-5 bg-light-gray"
+    <section id="billboard"  data-aos="fade-up" class="position-relative d-flex align-items-center py-5 bg-light-gray"
       style="background-image: url(images/banner-image-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 800px;">
       <div class="position-absolute end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 swiper-next main-slider-button-next">
         <svg class="chevron-forward-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
@@ -435,7 +436,7 @@
       </div>
     </section>
 
-    <section id="company-services" class="padding-large pb-0">
+    <section id="company-services"  data-aos="fade-up" class="padding-large pb-0">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 pb-3 pb-lg-0">
@@ -494,9 +495,9 @@
       </div>
     </section>
 
-    <section id="best-selling-items" class="position-relative padding-large ">
+    <section id="best-selling-items" data-aos="fade-up"class="position-relative padding-large ">
       <div class="container">
-        <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
+        <div data-aos="fade-up"class="section-title d-md-flex justify-content-between align-items-center mb-4">
           <h3 class="d-flex align-items-center">Best selling items</h3>
           <a href="index.html" class="btn">View All</a>
         </div>
@@ -787,7 +788,7 @@
       </div>
     </section>
 
-    <section id="limited-offer" class="padding-large"
+    <section data-aos="fade-up" id="limited-offer" class="padding-large"
       style="background-image: url(images/banner-image-bg-1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 800px;">
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -826,7 +827,7 @@
       </div>
     </section>
 
-    <section id="items-listing" class="padding-large">
+    <section data-aos="fade-up" id="items-listing" class="padding-large">
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
@@ -1206,7 +1207,7 @@
       </div>
     </section>
 
-    <section id="categories" class="padding-large pt-0">
+    <section  data-aos="fade-up" id="categories" class="padding-large pt-0">
       <div class="container">
         <div class="section-title overflow-hidden mb-4">
           <h3 class="d-flex align-items-center">Categories</h3>
@@ -1243,7 +1244,7 @@
       </div>
     </section>
 
-    <section id="customers-reviews" class="position-relative padding-large"
+    <section data-aos="fade-up"  id="customers-reviews" class="position-relative padding-large"
       style="background-image: url(images/banner-image-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 600px;">
       <div class="container offset-md-3 col-md-6 ">
         <div class="position-absolute top-50 end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 swiper-next testimonial-button-next">
@@ -1385,7 +1386,7 @@
       </div>
     </section>
 
-    <section id="latest-posts" class="padding-large">
+    <section data-aos="fade-up"  id="latest-posts" class="padding-large">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
           <h3 class="d-flex align-items-center">Latest posts</h3>
@@ -1427,7 +1428,7 @@
       </div>
     </section>
 
-    <section id="instagram">
+    <section data-aos="fade-up" id="instagram">
       <div class="container">
         <div class="text-center mb-4">
           <h3>Instagram</h3>
@@ -1509,7 +1510,7 @@
       </div>
     </section>
 
-    <footer id="footer" class="padding-large">
+    <footer data-aos="fade-up" id="footer" class="padding-large">
       <div class="container">
         <div class="row">
           <div class="footer-top-area">
@@ -1625,5 +1626,9 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
   </body>
 </html>
